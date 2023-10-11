@@ -26,7 +26,7 @@ def select_process():
     pid = int(listbox.get(selection[0]).split()[0])
 
     # Open a handle to the selected process
-    process_handle = psutil.Process(pid).handle
+    process_handle = open(f"/proc/{pid}/mem", "r+b")
 
     # TODO: Use the process handle to read and write memory
 
