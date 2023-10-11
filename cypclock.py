@@ -92,7 +92,7 @@ menu.add_cascade(label="Random", menu=random_menu)
 #random_url_button.pack(pady=100)
 
 korn_amv_button = Button(root,
-                  text="Execute",
+                  text="Mem Editor",
                   command=openwindow,
                   font=("calibri", 24),
                   fg="blue")
