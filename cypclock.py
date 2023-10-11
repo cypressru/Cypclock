@@ -12,6 +12,7 @@ root.title('Cypclock 0.2')
 #Adding Variables, can be numbers or strings
 new = 1
 url = "https://www.youtube.com/watch?v=Q44DA9-TH2o&list=PLLGIaswzK8nerfBww5vX312Bt2B5A24om"
+wikirandomurl = "https://en.wikipedia.org/wiki/Special:Random"
 
 
 #Adding commands, or something idk, to be called later. I don't fully understand how they work yet, but I know enough to write this.
@@ -23,7 +24,8 @@ def openweb():
    webbrowser.open(url,new=new)
 def expand ():
    pass
-
+def openwebrandomwiki():
+   webbrowser.open(wikirandomurl,new=new)
 # Create the drop-down menu
 menu = Menu(root)
 
@@ -47,6 +49,7 @@ root.config(menu=menu)
 #Create the "Random" menu with a command for 3 blank inputs to be filled later.
 random_menu = Menu(menu, tearoff=0)
 random_menu.add_command(label="Random URLs", command=openwebrandomdeclassified)
+random_menu.add_command(label="Random Wikipedia", command=openwebrandomwiki)
 
 #Add the "Random" menu to the menu bar
 menu.add_cascade(label="Random", menu=random_menu)
