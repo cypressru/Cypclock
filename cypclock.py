@@ -114,15 +114,12 @@ Label(root,text = 'KillGod420', font = 'arial 20 bold').pack(side=BOTTOM)
 # I won't be able to avoid learning what this does lol.  
 def time():
    string = strftime('%H:%M:%S %p')
-   mark.config(text = string)
-   mark.after(1000, time)
+   label.config(text=string)
+   Label.after(1000, time)
 
-mark = Label(root,
-   font = ('calibri', 40, 'bold'),
-   pady=150,
-   foreground = 'blue')
+label = label(root, font = ('calibri', 40, 'bold'), pady=150, foreground = 'blue')
 
-mark.pack(anchor = 'center')
+label.pack(anchor ='center')
 time()
 
 mainloop()
