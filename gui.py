@@ -59,7 +59,7 @@ def select_process():
     search_button.pack(pady=10)
 
     # Close the handle to the process
-    process_handle.close()
+    #process_handle.close()
 
 button = tk.Button(root, text="Select", command=select_process)
 button.pack(pady=10)
