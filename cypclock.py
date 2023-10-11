@@ -1,13 +1,28 @@
 from tkinter import *
 from time import strftime
+from PIL import Image, ImageTk
 import webbrowser
-import random
+import PIL
+
 #Adding random stuff for functionality, ask if you need
 root = Tk()
 root.geometry("420x420")
 root.resizable(0,0)
 root.title('Cypclock 0.2')
 #Above code is rules relating to the shape, title, and other properties of the window it's self
+
+#open the background image
+image = Image.open("images/gfs.jpg")
+
+#make sure it's the right size (it already is but lets make sure for learning reasons)
+image = image.resize((420, 420), Image.ANTIALIAS)
+
+#convert the image to a PhotoImage object
+photo_image = ImageTk.PhotoImage(image)
+
+# Create a Label widget and add the PhotoImage to it
+background_label = Label(root, image=photo_image)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 #Adding Variables, can be numbers or strings
 new = 1
@@ -66,12 +81,12 @@ menu.add_cascade(label="Random", menu=random_menu)
    #               fg="blue")
 #random_url_button.pack(pady=100)
 
-#korn_amv_button = Button(root,
- #                 text="Korn AMVs",
-  #                command=openweb,
-   #               font=("calibri", 24),
-    #              fg="blue")
-#korn_amv_button.pack(pady=100)
+korn_amv_button = Button(root,
+                  text="Execute",
+                  command=openweb,
+                  font=("calibri", 24),
+                  fg="blue")
+korn_amv_button.pack(pady=100)
 
 
 
