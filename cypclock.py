@@ -3,6 +3,7 @@ from time import strftime
 from PIL import Image, ImageTk
 import webbrowser
 import PIL
+import random
 
 #Adding random stuff for functionality, ask if you need
 root = Tk()
