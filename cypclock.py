@@ -1,10 +1,12 @@
 from tkinter import *
+from tkinter import messagebox
 from time import strftime
 from PIL import Image, ImageTk
 import webbrowser
 import PIL
 import random
 import subprocess
+import errno
 
 #Adding random stuff for functionality, ask if you need
 root = Tk()
@@ -50,13 +52,15 @@ def openwindow():
     import time
     time.sleep(1)
     import gui
+def fortnite():
+   tk.messagebox.error("No functionality :(")  #Not sure why tk is not defined. I will try to fix later
 
 # Create the drop-down menu
 menu = Menu(root)
 
 # Create the "File" menu with a command for the "Open" option
 file_menu = Menu(menu, tearoff=0)
-file_menu.add_command(label="Open", command=openweb)
+file_menu.add_command(label="Open", command=fortnite)
 
 # Add the "File" menu to the menu bar
 menu.add_cascade(label="File", menu=file_menu)
