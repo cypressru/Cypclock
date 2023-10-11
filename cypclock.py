@@ -53,7 +53,7 @@ def openwindow():
     time.sleep(1)
     import gui
 def fortnite():
-   messagebox.showerror("Error", "No added functionality :(")  #Bug Fixed :D
+   messagebox.showerror("Error", "No added functionality :(")  #Bug Fixed
 
 # Create the drop-down menu
 menu = Menu(root)
@@ -112,21 +112,17 @@ Label(root,text = 'KillGod420', font = 'arial 20 bold').pack(side=BOTTOM)
 # just me guessing based off of what I was able to do with it before. I don't really understand what's happening below, 
 # I will have to read more into it tomorrow. I want to use this to draw a GUI option for an analogue clock eventually so 
 # I won't be able to avoid learning what this does lol.  
-from tkinter import *
-from tkinter.ttk import *
-
-from time import strftime
-
-root = Tk()
-root.title('Clock')
-
 def time():
    string = strftime('%H:%M:%S %p')
-   label.config(text=string)
-   Label.after(1000, time)
+   mark.config(text = string)
+   mark.after(1000, time)
 
-label = Label(root, font =("ds-digital", 40, 'bold'), background="Pink", foreground ="blue")
-label.pack(anchor='center')
+mark = Label(root,
+   font = ('calibri', 40, 'bold'),
+   pady=150,
+   foreground = 'blue')
+
+mark.pack(anchor = 'center')
 time()
 
 mainloop()
