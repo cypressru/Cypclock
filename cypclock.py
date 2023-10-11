@@ -53,7 +53,7 @@ def openwindow():
     time.sleep(1)
     import gui
 def fortnite():
-   tk.messagebox.error("No functionality :(")  #Not sure why tk is not defined. I will try to fix later
+   messagebox.showerror("Error", "No added functionality :(")  #Bug Fixed :D
 
 # Create the drop-down menu
 menu = Menu(root)
