@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import webbrowser
 import PIL
 import random
+import subprocess
 
 #Adding random stuff for functionality, ask if you need
 root = Tk()
@@ -42,6 +43,14 @@ def expand ():
    pass
 def openwebrandomwiki():
    webbrowser.open(wikirandomurl,new=new)
+
+
+   #Bug here, if you close this newly created window and then press the button to relaunch, it fails. Idk why. 
+def openwindow():
+    import time
+    time.sleep(1)
+    import gui
+
 # Create the drop-down menu
 menu = Menu(root)
 
@@ -84,7 +93,7 @@ menu.add_cascade(label="Random", menu=random_menu)
 
 korn_amv_button = Button(root,
                   text="Execute",
-                  command=openweb,
+                  command=openwindow,
                   font=("calibri", 24),
                   fg="blue")
 korn_amv_button.pack(pady=100)
