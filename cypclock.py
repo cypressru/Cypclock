@@ -117,8 +117,7 @@ def time():
    label.config(text=string)
    Label.after(1000, time)
 
-label = label(root, font = ('calibri', 40, 'bold'), pady=150, foreground = 'blue')
-
+label = label(root, font =("ds-digital", 40, 'bold'), background="Pink", foreground ="blue")
 label.pack(anchor ='center')
 time()
 
