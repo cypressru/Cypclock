@@ -105,7 +105,11 @@ korn_amv_button.pack(pady=100)
 
 
 # clock code
-Label(root,text = 'KillGod420', font = 'arial 20 bold').pack(side=BOTTOM)
+Label(root,
+      text = 'KillGod420',
+      background = 'pink',
+      foreground = 'blue',
+      font = 'arial 20 bold').pack(side=BOTTOM)
 
 
 #Alright I understand what it does for the most part now.  
