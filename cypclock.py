@@ -7,6 +7,9 @@ import PIL
 import random
 import subprocess
 import errno
+import keyboard
+import os
+import sys
 
 #Adding random stuff for functionality, ask if you need
 root = Tk()
@@ -126,5 +129,15 @@ mark = Label(root,
 
 mark.pack(anchor = 'center')
 time()
+
+
+#Code to play a fart sound if key combo is pressed
+#Add If Else to check OS and run different code if it's on windows.
+#This only works on Linux/MacOS
+
+
+
+#if keyboard.is_pressed('ctrl+f+a'):
+ #     subprocess.call(["afplay", "fart.mp3"])
 
 mainloop()
