@@ -108,10 +108,7 @@ korn_amv_button.pack(pady=100)
 Label(root,text = 'KillGod420', font = 'arial 20 bold').pack(side=BOTTOM)
 
 
-#Past this is code I copied online, all I understand is we defined time. Above I called this defining a command, but that's 
-# just me guessing based off of what I was able to do with it before. I don't really understand what's happening below, 
-# I will have to read more into it tomorrow. I want to use this to draw a GUI option for an analogue clock eventually so 
-# I won't be able to avoid learning what this does lol.  
+#Alright I understand what it does for the most part now.  
 def time():
    string = strftime('%H:%M:%S %p')
    mark.config(text = string)
@@ -120,7 +117,8 @@ def time():
 mark = Label(root,
    font = ('calibri', 40, 'bold'),
    pady=150,
-   foreground = 'blue')
+   foreground = 'blue',
+   background = 'pink')
 
 mark.pack(anchor = 'center')
 time()
