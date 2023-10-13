@@ -132,7 +132,7 @@ time()
 
 
 #Code to play a fart sound if key combo is pressed
-#Add If Else to check OS and run different code if it's on windows.
+#Add If Else to check OS and run different code if it's on windows
 #This only works on Linux/MacOS
 
 
