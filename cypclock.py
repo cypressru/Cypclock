@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from time import strftime
 from PIL import Image, ImageTk
+from pynput import keyboard
 import webbrowser
 import PIL
 import random
@@ -22,7 +23,7 @@ root.title('Cypclock 0.2')
 image = Image.open("images/gfs.jpg")
 
 #make sure it's the right size (it already is but lets make sure for learning reasons)
-image = image.resize((420, 420), Image.ANTIALIAS)
+image = image.resize((420, 420), Image.LANCZOS)
 
 #convert the image to a PhotoImage object
 photo_image = ImageTk.PhotoImage(image)
