@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from time import strftime
 from PIL import Image, ImageTk
-#from pynput import keyboard
+from pynput import keyboard
 import webbrowser
 import PIL
 import random
