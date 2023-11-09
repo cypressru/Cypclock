@@ -1,3 +1,5 @@
+import sys
+sys.path.append('PATH')
 from tkinter import *
 from tkinter import messagebox
 from time import strftime
